@@ -1,0 +1,23 @@
+{
+  "name": "doc3rd",
+  "type": "module",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proj3rd/doc3rd.git"
+  },
+  "author": "Seokseong Jeon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proj3rd/doc3rd/issues"
+  },
+  "homepage": "https://github.com/proj3rd/doc3rd#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "typescript": "^4.6.4"
+  }
+}
