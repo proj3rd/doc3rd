@@ -39,7 +39,7 @@ export class Paragraph {
     if (!pPr) {
       return undefined;
     }
-    const outlineLevel = Paragraph.getOutlineLevelFromNode(pPr.cloneNode(true));
+    const outlineLevel = Paragraph.getOutlineLevelFromNode(pPr.cloneNode(true).cloneNode(true));
     if (outlineLevel) {
       return Number(outlineLevel);
     }
@@ -47,7 +47,7 @@ export class Paragraph {
     if (!paraStyle) {
       return undefined;
     }
-    const outlineLevelFromStyle = Paragraph.getOutlineLevelFromNode(paraStyle);
+    const outlineLevelFromStyle = Paragraph.getOutlineLevelFromNode(paraStyle.cloneNode(true));
     return Number(outlineLevelFromStyle);
   }
 
